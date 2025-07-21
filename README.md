@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔐 Next.js Auth App
 
-## Getting Started
+A simple authentication app built with **Next.js** and **Auth.js** (NextAuth), supporting:
 
-First, run the development server:
+- 🔑 Google Sign-In
+- 🐱 GitHub Sign-In
+- ✉️ Magic Link via Email
+
+---
+
+## 🚀 Demo
+
+> Coming soon...
+
+---
+
+## 📦 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [Auth.js (NextAuth)](https://authjs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [MongoDB (mongoose)](https://www.mongodb.com/)
+
+---
+
+## 🧑‍💻 Features
+
+- ✅ Sign in with Google or GitHub
+- ✅ Session management
+- ✅ Easy route protection
+- ✅ Server & client component support
+
+---
+
+## 🛠️ Installation
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/next-auth-app.git
+cd next-auth-app
+
+# 2. Install dependencies
+npm install
+
+# 3. Set up environment variable
+touch .env
+
+# 4. Run the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ .env.local Configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the root of your Next.js project with the following variables:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+# ========================
+# MongoDB Connection
+# ========================
+MONGO_URI=mongodb://127.0.0.1:27017/authProject
 
-## Learn More
+# ========================
+# NextAuth Secret Key
+# ========================
+AUTH_SECRET=your_nextauth_secret_key
 
-To learn more about Next.js, take a look at the following resources:
+# ========================
+# GitHub OAuth Provider
+# ========================
+AUTH_GITHUB_ID=your_github_client_id
+AUTH_GITHUB_SECRET=your_github_client_secret
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# ========================
+# Google OAuth Provider
+# ========================
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧩 OAuth Setup
 
-## Deploy on Vercel
+Create OAuth credentials at:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Google](https://console.cloud.google.com/apis/credentials/)
+- [GitHub](https://github.com/settings/developers/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to fork, improve, or give a ⭐ on GitHub!
