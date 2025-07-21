@@ -4,13 +4,6 @@ A simple authentication app built with **Next.js** and **Auth.js** (NextAuth), s
 
 - 🔑 Google Sign-In
 - 🐱 GitHub Sign-In
-- ✉️ Magic Link via Email
-
----
-
-## 🚀 Demo
-
-> Coming soon...
 
 ---
 
